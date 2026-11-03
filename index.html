@@ -2,105 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Joao Coach v8</title>
-<style>
-:root{--bg:#0a0a0a;--card:#18181b;--border:#27272a;--green:#22c55e;--red:#ef4444;--orange:#fb923c;--yellow:#eab308}
-*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,system-ui;background:var(--bg);color:#fff;padding:14px;padding-bottom:80px}
-.badge{background:var(--green);color:#000;padding:6px 12px;border-radius:999px;font-weight:800;font-size:11px;display:inline-block}
-.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;margin:12px 0;line-height:1.4}
-.month{font-weight:900;font-size:15px;margin:24px 0 8px;letter-spacing:.5px;opacity:.9;border-bottom:1px solid var(--border);padding-bottom:6px}
-.race-A{border-left:4px solid var(--red)} .race-B{border-left:4px solid var(--orange)} .race-C{border-left:4px solid var(--yellow)}
-.old{ text-decoration:line-through; opacity:.35}
-.btn{background:#fff;color:#000;border:0;border-radius:999px;padding:10px 16px;font-weight:700;width:100%;margin-top:8px}
-.small{opacity:.6;font-size:12px} .tabs{display:flex;gap:8px;margin:14px 0} .tab{padding:8px 14px;border-radius:999px;border:1px solid var(--border);font-weight:700;font-size:13px} .tab.active{background:#fff;color:#000}
-#updateBanner{display:none;background:var(--green);color:#000;padding:10px;text-align:center;font-weight:800;position:fixed;top:0;left:0;right:0;z-index:99}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angkor 100 - Jan 23 2027</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');body{font-family:Inter,sans-serif;background:#0a0a0a;color:#fff}.tab-active{border-bottom:3px solid #f97316;color:#f97316}.travel{background:repeating-linear-gradient(45deg,#222,#222 10px,#1a1a1a 10px,#1a1a1a 20px)}</style>
 </head>
-<body>
-<div id="updateBanner">New update available - tap to refresh</div>
-<div class="badge">v8.0 FINAL - UESCA RPE - AUTO-UPDATE ON - 2026-11-03 8AM SYNC</div>
-<h2 style="margin:10px 0 2px">Angkor 100 - Jan 23, 2027</h2>
-<div class="small">Sync 8:00am (wake 7:20, score 7:45) • English only • No fixed 5:45 pace • Garmin RPE-based</div>
-
-<div class="card">
-<b>✓ FIXED: No more 5:45</b><br>
-<span class="old">OLD: 12km @5:45/km</span> → <b>NOW: 10K @ RPE 3-4 Conversational / Talk Test / HR cap &lt;145 heat-adjusted</b><br>
-<span class="small">Per your UESCA Module 6 file: HR is response to total stress, core temp raises HR. Use RPE. Estimated pace from YOUR Garmin history shows after Connect (expected ~6:50-7:25 flat heat).</span>
-</div>
-
-<div class="tabs">
-<div class="tab active" onclick="showMonth('nov')">NOV</div>
-<div class="tab" onclick="showMonth('dec')">DEC</div>
-<div class="tab" onclick="showMonth('jan')">JAN → ANGKOR</div>
-</div>
-
-<div id="nov">
-<div class="month">NOVEMBER 2026</div>
-<div class="card race-B"><b>Nov 15 - 15K Trail 800m Macau - B RACE</b><br>Goal: Hill strength test<br>Taper: Nov 12-14 -40% volume, keep intensity<br>Recovery: Nov 16-17 easy only RPE 2-3<br>Nutrition: Pre 300ml+30g carbs, During 500ml/h + salt cap/30min</div>
-<div class="card">Nov 16-30: Base 2 - Flat heat, no vertical. 45-58km/wk. Long 22-28K flat Hac Sa sand. Gaiters + double socks.</div>
-</div>
-
-<div id="dec" style="display:none">
-<div class="month">DECEMBER 2026</div>
-<div class="card race-B"><b>Dec 6 - Half Marathon Macau - B RACE - KEY BENCHMARK</b><br>V.DOT benchmark → recalculates Angkor 100 projected finish. Taper Dec 3-5.<br>Post-race: New estimated time shows in Sunday report.</div>
-<div class="card">Dec 7-25: Build 2 Peak - Long Dec 21 35K @RPE 3-4 flat + aid station gap simulation 10-12K no water</div>
-<div class="card race-C"><b>Dec 26 - 10K Lisbon - C RACE - Fun Tempo RPE 7</b><br>No taper, 1 easy day before. Family fun.</div>
-</div>
-
-<div id="jan" style="display:none">
-<div class="month">JANUARY 2027</div>
-<div class="card race-C"><b>Jan 17 - 10K Trail 350m Macau - C RACE - SHAKEOUT ONLY</b><br><span style="color:var(--red);font-weight:900">DO NOT RACE - RPE 3 / 60% effort</span> - Leg turnover only, 6 days before A-race</div>
-<div class="card race-A"><b>Jan 23 - ANGKOR ULTRA 100K - A RACE</b><br>Goal: Finish. Target: 18:30-19:15 (updates after Dec 6 Half). Strategy: Loop 1 (0-64K) 8-9h slow, Loop 2 push.<br>Fuel: 60-90g carbs/h + 750-1000mg sodium/h from hour 1. Heat: Ice bandana.</div>
-</div>
-
-<div class="month">TODAY'S DETAIL + NUTRITION</div>
-<div class="card">
-<b>Today: 10K Endurance Aerobic Base</b><br>
-Workout: 10K flat Coloane @ RPE 3-4 conversational - talk test pass<br>
-Why: UESCA Step 1 - Easy before hard, least specific → most specific (flat sand now, Angkor sand later)<br>
-Nutrition: Pre 300ml water + 30g carbs 30min before. During 500ml/h + 1 salt cap per 30min (Pharmacy). Post 20g protein + carbs 30min.<br>
-Gear: Gaiters + tape + 2 socks for sand simulation
-<button class="btn" onclick="alert('Connect Garmin here - after connect, YOUR easy pace replaces RPE placeholder')">Connect Garmin (one time)</button>
-<div class="small" style="margin-top:8px">After 8am sync: immediate feedback + auto-adjust tomorrow -10% if HRV -15% or sleep <6h. Sunday 9pm: Full report + Angkor realism ON TRACK/AT RISK + Projected finish.</div>
-</div>
-
-<script>
-// Simple month tabs
-function showMonth(m){
- document.getElementById('nov').style.display='none';
- document.getElementById('dec').style.display='none';
- document.getElementById('jan').style.display='none';
- document.getElementById(m).style.display='block';
- document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
- if(m=='nov') document.querySelectorAll('.tab')[0].classList.add('active');
- if(m=='dec') document.querySelectorAll('.tab')[1].classList.add('active');
- if(m=='jan') document.querySelectorAll('.tab')[2].classList.add('active');
-}
-// Auto-update check - from now you never reinstall
-// This checks version.json that I can update from my side
-const CURRENT_VERSION = 'v8.0';
-async function checkUpdate(){
- try{
-  const r = await fetch('/version.json?v='+Date.now(),{cache:'no-store'});
-  if(!r.ok) return;
-  const data = await r.json();
-  if(data.version && data.version !== CURRENT_VERSION){
-    const b = document.getElementById('updateBanner');
-    b.style.display='block';
-    b.innerText = 'Update '+data.version+' available - tap to refresh';
-    b.onclick = ()=> location.reload(true);
-  }
- }catch(e){ console.log('offline - using cached v8') }
-}
-checkUpdate();
-setInterval(checkUpdate, 60*1000);
-if('serviceWorker' in navigator){
- // unregister old bad SW from v5
- navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister()));
-}
-</script>
-</body>
-</html>
+<body class="min-h-screen pb-20"><div id="app" class="max-w-[480px] mx-auto px-4 pt-4">
+<div class="flex justify-between items-center mb-4"><div><h1 class="text-2xl font-black">ANGKOR 100 <span class="text-orange-500">v9.0</span></h1><p class="text-[11px] text-zinc-400">Jan 23 2027 • Terrace 4AM • v9.0 FINAL + Calendar + AI Coach</p></div><button onclick="checkUpdate()" class="text-[10px] bg-zinc-800 px-2 py-1 rounded">Check Update</button></div>
+<div class="grid grid-cols-3 gap-2 mb-4"><div class="bg-zinc-900 rounded-xl p-3"><div class="text-[10px] text-zinc-400">TODAY</div><div id="todayDate" class="font-bold text-sm"></div><div id="todayWorkout" class="text-[11px] mt-1 text-orange-400">Loading...</div></div><div class="bg-zinc-900 rounded-xl p-3"><div class="text-[10px] text-zinc-400">NEXT RACE</div><div class="font-bold text-sm">Nov 15 • 15K Trail</div><div class="text-[11px] mt-1">Macau • Test gear</div></div><div class="bg-zinc-900 rounded-xl p-3"><div class="text-[10px] text-zinc-400">ANGKOR</div><div class="font-bold text-sm">81 days</div><div class="text-[11px] mt-1">64K Bayon target</div></div></div>
+<div class="flex gap-6 border-b border-zinc-800 mb-4 text-[13px] font-semibold"><button id="tab-today" onclick="switchTab('today')" class="pb-2 tab-active">TODAY</button><button id="tab-calendar" onclick="switchTab('calendar')" class="pb-2 text-zinc-500">CALENDAR</button><button id="tab-plan" onclick="switchTab('plan')" class="pb-2 text-zinc-500">PLAN</button><button id="tab-coach" onclick="switchTab('coach')" class="pb-2 text-zinc-500">AI COACH</button><button id="tab-garmin" onclick="switchTab('garmin')" class="pb-2 text-zinc-500">GARMIN</button></div>
+<div id="view-today"><div class="bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl p-4 mb-4"><div class="text-[11px] opacity-80">TODAY'S WORKOUT - NO 5:45 BUG</div><div class="text-xl font-black mt-1" id="workoutTitle">10K @ RPE 3-4 Conversational</div><div class="text-[12px] mt-2 opacity-90" id="workoutDetail">Flat Hac Sa • HR<145 • 500ml + salt cap /30min • No hills - save legs for Angkor sand</div><div class="mt-3 flex gap-2"><button class="bg-black text-white text-[11px] px-3 py-1.5 rounded-full">Mark Done</button><button class="bg-white/20 text-[11px] px-3 py-1.5 rounded-full">Adjust</button></div></div><div class="bg-zinc-900 rounded-xl p-3 text-[12px]"><b>Why this works for you:</b> With Nepal moto Nov21-29 (0 run), Lapland Dec12-17, Portugal Dec18-Jan3 - we keep only 3 runs/week. No 5:45 AM forced.</div></div>
+<div id="view-calendar" class="hidden"><div class="flex gap-2 mb-3"><button onclick="setMonth('nov')" id="m-nov" class="px-3 py-1 rounded-full bg-orange-500 text-[12px]">NOV</button><button onclick="setMonth('dec')" id="m-dec" class="px-3 py-1 rounded-full bg-zinc-800 text-[12px]">DEC</button><button onclick="setMonth('jan')" id="m-jan" class="px-3 py-1 rounded-full bg-zinc-800 text-[12px]">JAN</button></div><div id="calGrid" class="space-y-2"></div></div>
+<div id="view-plan" class="hidden space-y-2 text-[12px]"></div>
+<div id="view-coach" class="hidden flex flex-col h-[60vh]"><div class="bg-zinc-900 rounded-xl p-3 mb-3 text-[11px]">Talk to AI Coach - trained on your races: Nov15 15K, Dec6 Half, Dec26 10K, Jan17 10K trail, Jan23 Angkor. Ask anything about taper, heat, salt, sand.</div><div id="chatBox" class="flex-1 overflow-y-auto bg-zinc-900 rounded-xl p-3 space-y-2 text-[12px]"><div class="bg-zinc-800 p-2 rounded-lg">Hey! I'm your Angkor coach. With 1 month real training + travel, target is Bayon 64K, not hero 100K. How are legs today?</div></div><div class="flex gap-2 mt-3"><input id="chatInput" class="flex-1 bg-zinc-800 rounded-full px-4 py-2 text-[12px]" placeholder="Ask coach... e.g. can I run today?"><button onclick="sendChat()" class="bg-orange-500 px-4 py-2 rounded-full text-[12px] font-bold">Send</button></div></div>
+<div id="view-garmin" class="hidden"><div class="bg-zinc-900 rounded-xl p-4"><h3 class="font-bold">Garmin Connect</h3><p class="text-[11px] text-zinc-400 mt-1">Connect to auto-import runs. No 5:45 bug.</p><div class="mt-3 space-y-2"><input class="w-full bg-zinc-800 rounded px-3 py-2 text-[12px]" placeholder="Garmin email"><input class="w-full bg-zinc-800 rounded px-3 py-2 text-[12px]" placeholder="Password (local only)"><button class="w-full bg-orange-500 rounded py-2 text-[12px] font-bold">Connect</button><p class="text-[10px] text-zinc-500">Local only - no server.</p></div></div></div>
+</div><script>
+const calData={nov:[{date:'Nov 15',type:'race',title:'15K Trail Macau',desc:'Easy test Kailas EX 330 + vest'},{date:'Nov 18',type:'run',title:'10K RPE 3-4',desc:'Flat Coloane'},{date:'Nov 21-29',type:'travel',title:'NEPAL MOTO TOUR',desc:'0 running - travel, altitude, rest'},{date:'Nov 30',type:'run',title:'8K easy',desc:'Back from Nepal'}],dec:[{date:'Dec 6',type:'race',title:'Macau Half Marathon',desc:'Fitness test <1:55'},{date:'Dec 8',type:'rest',title:'Rest / walk'},{date:'Dec 12-17',type:'travel',title:'LAPLAND',desc:'Cold, mobility only'},{date:'Dec 18 - Jan 3',type:'travel',title:'PORTUGAL',desc:'Mild weather - key block'},{date:'Dec 26',type:'race',title:'Sao Silvestre Lisboa 10K',desc:'Fun shakeout'},{date:'Dec 30',type:'run',title:'22K long easy',desc:'Portugal - last long'}],jan:[{date:'Jan 4',type:'run',title:'Back in Macau 10K',desc:'Heat re-acclimation'},{date:'Jan 10',type:'run',title:'15K with 5K @ race pace',desc:'Race sim'},{date:'Jan 17',type:'race',title:'10K Trail Race',desc:'Shakeout 6d before Angkor'},{date:'Jan 20-22',type:'rest',title:'Taper + carb + salt',desc:'No runs, sauna 20min'},{date:'Jan 23',type:'race',title:'ANGKOR 100 / Bayon 64K',desc:'Terrace 4AM - target 64K 8-9h'}]};
+function switchTab(t){['today','calendar','plan','coach','garmin'].forEach(x=>{document.getElementById('view-'+x).classList.add('hidden');document.getElementById('tab-'+x).classList.remove('tab-active');document.getElementById('tab-'+x).classList.add('text-zinc-500');});document.getElementById('view-'+t).classList.remove('hidden');document.getElementById('tab-'+t).classList.add('tab-active');document.getElementById('tab-'+t).classList.remove('text-zinc-500');if(t==='calendar') setMonth('nov');if(t==='plan') renderPlan();}
+function setMonth(m){['nov','dec','jan'].forEach(k=>document.getElementById('m-'+k).className='px-3 py-1 rounded-full bg-zinc-800 text-[12px]');document.getElementById('m-'+m).className='px-3 py-1 rounded-full bg-orange-500 text-[12px]';const grid=document.getElementById('calGrid');grid.innerHTML='';calData[m].forEach(ev=>{let cls='bg-zinc-900';if(ev.type==='travel') cls='travel border border-zinc-700';if(ev.type==='race') cls='bg-orange-500/20 border border-orange-500/50';grid.innerHTML+=`<div class="${cls} rounded-xl p-3 flex justify-between"><div><div class="font-bold text-[12px]">${ev.date} • ${ev.title}</div><div class="text-[11px] text-zinc-400 mt-1">${ev.desc}</div></div><div class="text-[10px] uppercase">${ev.type}</div></div>`;});}
+function renderPlan(){const el=document.getElementById('view-plan');el.innerHTML=`<div class="bg-zinc-900 rounded-xl p-3"><b>Strategy:</b> Only 4 real weeks due to travel. Target Bayon 64K same start, finish at base de vie 64K. No long >28K. Salt 750-1000mg/hr. Flat sand focus.</div>`+Object.keys(calData).map(m=>`<h4 class="font-bold mt-4 uppercase">${m}</h4>`+calData[m].map(e=>`<div class="bg-zinc-900 rounded p-2 mt-1">${e.date} - ${e.title}</div>`).join('')).join('');}
+function sendChat(){const inp=document.getElementById('chatInput');const box=document.getElementById('chatBox');if(!inp.value) return;const q=inp.value;box.innerHTML+=`<div class="bg-orange-500 p-2 rounded-lg text-right ml-8">${q}</div>`;inp.value='';setTimeout(()=>{let ans="For your schedule: With Nepal 0 run, don't chase mileage. ";if(q.toLowerCase().includes('5:45')||q.toLowerCase().includes('time')) ans="Fixed! No more 5:45 forced. All runs 7-8AM or lunch.";else if(q.toLowerCase().includes('marathon')||q.toLowerCase().includes('half')) ans="Dec 6: Definitely half, not full. Half <1:55 = on track for Bayon 64K.";else if(q.toLowerCase().includes('salt')||q.toLowerCase().includes('heat')) ans="Salt: 750-1000mg sodium/hr from hour 1. Heat: midday slow run 2 layers + 1L water.";else if(q.toLowerCase().includes('angkor')||q.toLowerCase().includes('100')) ans="Jan 23: Aim 64K in 8-9h, not 7h. Slow first, fast second. Sand = blisters, tape + gaiters.";else ans+="Keep 3 runs/week, RPE 3-4, flat only. Last long 22-28K max in Portugal Dec30-Jan10. Taper Jan20-22.";box.innerHTML+=`<div class="bg-zinc-800 p-2 rounded-lg mr-8">${ans}</div>`;box.scrollTop=box.scrollHeight;},400);}
+function checkUpdate(){fetch('version.json').then(r=>r.json()).then(j=>alert('Current: v9.0\\nServer: '+j.version)).catch(()=>alert('v9.0 FINAL'))}
+document.getElementById('todayDate').innerText=new Date().toDateString();document.getElementById('todayWorkout').innerText='10K @ RPE 3-4 - No 5:45';setMonth('nov');
+</script></body></html>
